@@ -2,6 +2,7 @@ package com.example.humanaim;
 
 import com.example.humanaim.modules.HumanAimAssist;
 import com.example.humanaim.modules.HumanTriggerBot;
+import com.example.humanaim.modules.TargetEsp;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 
@@ -10,6 +11,7 @@ public class HumanAimAddon extends MeteorAddon {
     public void onInitialize() {
         Modules.get().add(new HumanAimAssist());
         Modules.get().add(new HumanTriggerBot());
+        Modules.get().add(new TargetEsp());
     }
 
     @Override
